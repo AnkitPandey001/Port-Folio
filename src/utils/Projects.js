@@ -5,8 +5,8 @@ import random from "../assest/projects/Random.png";
 import weather from "../assest/projects/weather.png";
 import backend from "../assest/projects/backedn.webp";
 import github from "../assest/projects/Github.png";
-import chat from "../assest/projects/chat.webp";
-
+import ecom from '../assest/projects/Ecommerce.png'
+import blosg from "../assest/projects/Blogs.png"
 export const projects = [
   {
     title: "Mini 10 JS Projects",
@@ -17,16 +17,7 @@ export const projects = [
     image: jsmini,
     github: "https://github.com/AnkitPandey001/Mini-JS-Project-Top-10",
   },
-  {
-    title: "TempChat-App",
-    description:
-      "A real-time chat application developed using React and Socket.io. Users can join chat rooms by entering a room ID and username, providing a seamless and interactive chatting experience.",
-    year: "2024",
-    tech: ["React", "Socket.io", "Node.js", "CSS"],
-    image: chat,
 
-    github: "https://github.com/AnkitPandey001/Chat-App",
-  },
   {
     title: "CodeStream",
     description:
@@ -86,5 +77,35 @@ export const projects = [
     liveDemo:
       "https://66eb2890b95641882d38915f--willowy-rabanadas-b864b4.netlify.app/",
     github: "https://github.com/AnkitPandey001/GitHub-Profile-Explorer-",
+  },
+  // New Blog App project
+  {
+    title: "Blog App",
+    description:
+      "This is a Blog App where users can create, edit, and delete posts. They can follow other users, view their profiles, and explore posts from the community. The app includes features like user authentication, profile customization, and a feed showcasing posts with likes and comments.",
+    year: 2024,
+    tech: ["React", "Express.js", "MongoDB", "Node.js", "Tailwind CSS"],
+    image: blosg, // Replace with actual image when available
+    github: "https://github.com/AnkitPandey001/blogs-app-frontend",
+    features: [
+      "User Authentication: Secure login and signup.",
+      "Profile Customization: Users can update their profile pictures, bios, and other details.",
+      "Post Management: Create, edit, and delete posts with rich text support.",
+      "Community Engagement: Follow and unfollow users to build your network.",
+      "Like and comment on posts to interact with the community.",
+      "Explore Feed: Browse through posts created by the community.",
+      "Responsive Design: Accessible on both mobile and desktop devices.",
+    ],
+  },
+  // New E-commerce App project (ongoing)
+  {
+    title: "E-commerce App",
+    description:
+      "An E-commerce platform built with React, Express, and MongoDB, providing a full shopping experience. Users can browse products, add them to their cart, make orders, and manage their accounts. The backend includes features like product management, user authentication, and order handling.",
+    year: "2024 [Working / ongoing]",
+    tech: ["React", "Express.js", "MongoDB", "Node.js"],
+    image: ecom,
+    github: "https://github.com/AnkitPandey001/E-commerce-App",
+    liveDemo: "working", 
   },
 ];

@@ -11,7 +11,7 @@ import Footer from "./pages/Footer";
 const App = () => {
   return (
     <div
-      className="min-h-screen text-white p-6"
+      className="min-h-screen text-white p-6 w-full"
       style={{
         background: "rgb(41,203,3)",
         background:

@@ -43,7 +43,6 @@ const Home = () => {
         </a>
       </div>
 
-      {/* Right Section (Details Component) */}
       <Details />
     </main>
   );

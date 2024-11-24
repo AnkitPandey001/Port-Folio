@@ -23,14 +23,14 @@ const Projects = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2, // Show 2 slides on medium screens
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // Show 1 slide on smaller screens
           slidesToScroll: 1,
         },
       },
@@ -44,7 +44,7 @@ const Projects = () => {
       </h1>
 
       {/* Slick Carousel */}
-      <Slider {...settings} className="w-full max-w-[100vw] px-4">
+      <Slider {...settings} className="w-full max-w-[100vw]">
         {projects.map((project, index) => (
           <div key={index} className="p-4">
             <div
@@ -60,13 +60,13 @@ const Projects = () => {
                 />
               </div>
               {/* Project Details */}
-              <div className="text-center p-4">
-                <h2 className="text-xl font-bold text-emerald-400">
+              <div className="p-4">
+                <h2 className="text-xl font-bold text-emerald-400 text-center sm:text-left">
                   {project.title}
                 </h2>
-                <p className="text-white mt-2">{project.description}</p>
-                <p className="text-gray-400 mt-4">Year: {project.year}</p>
-                <p className="text-gray-400 mb-4">
+                <p className="text-white mt-2 text-center sm:text-left">{project.description}</p>
+                <p className="text-gray-400 mt-4 text-center sm:text-left">Year: {project.year}</p>
+                <p className="text-gray-400 mb-4 text-center sm:text-left">
                   Technologies: {project.tech.join(", ")}
                 </p>
                 <div className="flex justify-center space-x-4">
