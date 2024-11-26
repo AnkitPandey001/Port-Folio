@@ -1,5 +1,6 @@
 import React from "react";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si"; // LeetCode Icon
 import Details from "../utils/Details";
 
 const Home = () => {
@@ -22,25 +23,29 @@ const Home = () => {
           <br />
           <span className="text-emerald-400">FullStack Developer.</span>
         </h2>
-        <a
-          href="https://github.com/AnkitPandey001"
-          className="bg-emerald-500 text-white px-4 py-2 rounded-lg mb-4 hover:bg-emerald-600 transition-colors duration-300"
-        >
-         GitHub
-        </a>
-
-        <a
-          href="https://leetcode.com/u/PandeyAnkit001/"
-          className="bg-emerald-500 text-white px-4 py-2 rounded-lg mb-4 hover:bg-emerald-600 transition-colors duration-300 md:ml-3"
-        >
-          Leetcode
-        </a>
-        <a
-          href="https://www.linkedin.com/in/pandeyankit001/"
-          className="bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors duration-300 md:ml-3"
-        >
-        Linkedin
-        </a>
+        <div className="flex items-center space-x-4">
+          <a
+            href="https://github.com/AnkitPandey001"
+            className="bg-emerald-500 p-4 rounded-lg flex justify-center items-center hover:bg-emerald-400 transition-transform duration-300 transform hover:scale-110"
+            title="GitHub"
+          >
+            <FaGithub className="text-white text-2xl" />
+          </a>
+          <a
+            href="https://leetcode.com/u/PandeyAnkit001/"
+            className="bg-orange-500 p-4 rounded-lg flex justify-center items-center hover:bg-orange-400 transition-transform duration-300 transform hover:scale-110"
+            title="LeetCode"
+          >
+            <SiLeetcode className="text-white text-2xl" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pandeyankit001/"
+            className="bg-blue-500 p-4 rounded-lg flex justify-center items-center hover:bg-blue-400 transition-transform duration-300 transform hover:scale-110"
+            title="LinkedIn"
+          >
+            <FaLinkedin className="text-white text-2xl" />
+          </a>
+        </div>
       </div>
 
       <Details />
